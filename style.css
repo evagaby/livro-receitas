@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    max-width: 900px;
+    background-color: rgb(243, 243,243);
+    padding: 0;
+    margin-left: auto;
+    
+    justify-content: center;
+}
+.instagram_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60rem ;
+    height: 100vh;
+}
+.instagram_phone {
+    display: flex ;
+    align-items:center;
+    justify-content: center;
+    width: 50px;
+}
+.instagram_phone img{
+    height: 50rem;
+    justify-content: center;
+}
+.instagram_continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffff;
+    width: 100%;
+    padding: 1.3 rem 0;
+    border:1px solid lightgray ;
+    margin-top: 50px;
+}
+.group:nth-child(1){
+    min-width: 19rem;
+}
+.profile_photo img{
+    margin-bottom: 25px;
+    height:150px;
+    height: 6rem;
+    align-items: center;
+}
+.instagram_logo{ 
+    align-items:center;
+    justify-content: center;
+    width: 170px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.login{
+    background-color: #0095f6;
+    color: #ffff;
+    padding: 8px;
+    border-radius: 4px;
+
+}
+.logout{
+    color:#0095f6 ;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.linkblue{
+    color: #0095f6;
+    font-weight: bold;
+    
+}
+.notaccount{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.get_the_app{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.get_app{
+   margin-left: 100px;
+  
+   margin-bottom: 35px;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    }
+.appdownload{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.appdownload:nth-child(1){
+    background-image: url(./app-store-botao.png);
+margin-right: 40px;
+}
+.appdownload:nth-child(2){background-image: url(./botao\ play\ store.png);}
+    
+/*media queries*/
+
+@media (max-width:1024px){ 
+    .instagram_wrapper{ width: 90%;}
+
+}
+@media (max-width:650px){
+    .instagram_wrapper{ width: 90%;}
+
+    .instagram_phone{
+        display: none; }
+    .instagram_continue{width: 100%;}
+    .group{
+        border: 1px solid transparent;
+    }
+}
